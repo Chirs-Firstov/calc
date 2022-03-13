@@ -22,6 +22,7 @@ public class Main {
                 int sub = num1 - num2;
                 System.out.println("Разность = " + sub);
             }
+            default -> System.out.println("Знак не распознан. Используйте пожалуйства только: '+' '-' '*' '/' ");
 
 
         }
