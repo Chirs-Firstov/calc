@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-// calc 1.1
+// calc 1.2
 public class Main {
 
     public static void main(String[] args) {
@@ -22,7 +22,12 @@ public class Main {
                 int sub = num1 - num2;
                 System.out.println("Разность = " + sub);
             }
+            case "*" ->{
+                int mul = num1 * num2;
+                System.out.println("Произведение = " + mul);
+            }
             default -> System.out.println("Знак не распознан. Используйте пожалуйства только: '+' '-' '*' '/' ");
+
 
 
         }
