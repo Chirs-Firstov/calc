@@ -25,9 +25,10 @@ public class Main {
             case "*" ->{
                 int mul = num1 * num2;
                 System.out.println("Произведение = " + mul);
-
-                /*Добавь кейс с делением, пожалуйста))) */
-
+            }
+            case "/" ->{
+                int mul = num1 / num2;
+                System.out.println("Частное = " + mul);
             }
             default -> System.out.println("Знак не распознан. Используйте пожалуйства только: '+' '-' '*' '/' ");
 
