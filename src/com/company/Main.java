@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-// calc 1.2
+// calc 1.3
 public class Main {
 
     public static void main(String[] args) {
@@ -25,13 +25,23 @@ public class Main {
             case "*" ->{
                 int mul = num1 * num2;
                 System.out.println("Произведение = " + mul);
-
-                /*Добавь кейс с делением, пожалуйста))) */
-
             }
-            default -> System.out.println("Знак не распознан. Используйте пожалуйства только: '+' '-' '*' '/' ");
 
+            case "/" -> {
+                int mul = 0;
+                try {
+                    mul = num1 / num2;
+                } catch (ArithmeticException e) {
+                    System.out.println("На ноль делить нельзя");
+                    break;
+                }
+                System.out.println("Частное = " + mul);
+            }
+
+            default -> {
+                System.out.println("Знак не распознан. Используйте пожалуйства только: '+' '-' '*' '/' ");
+                scanner.close();
+            }
         }
-        scanner.close();
     }
 }
