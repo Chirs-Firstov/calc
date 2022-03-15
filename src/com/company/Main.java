@@ -27,8 +27,16 @@ public class Main {
                 System.out.println("Произведение = " + mul);
             }
             case "/" ->{
-                int mul = num1 / num2;
-                System.out.println("Частное = " + mul);
+                int mul =0;
+                try {
+                        mul=num1 / num2;
+                    System.out.println("Частное = " + mul);
+                }
+                catch(Exception e)
+                {
+                    System.out.println("Ошибка деления на ноль");
+                }
+
             }
             default -> System.out.println("Знак не распознан. Используйте пожалуйства только: '+' '-' '*' '/' ");
 
